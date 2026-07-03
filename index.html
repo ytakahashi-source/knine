@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>株式会社ケーナインのご提案｜ジョブリー建設</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1d2a38;
+  --ink-soft:#46586b;
+  --navy:#17456b;
+  --navy-deep:#0f2f4b;
+  --paper:#ffffff;
+  --paper-alt:#f4f6f8;
+  --rule:#dce1e6;
+  --vermilion:#b0402f;
+  --serif:"Shippori Mincho",serif;
+  --sans:"Noto Sans JP",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.9;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:720px;margin:0 auto;padding:0 24px}
+
+/* ---------- 導入 ---------- */
+.hero{padding:88px 0 72px;border-bottom:1px solid var(--rule)}
+.hero .to{
+  font-size:13px;letter-spacing:.12em;color:var(--ink-soft);
+  margin-bottom:40px;
+}
+.hero h1{
+  font-family:var(--serif);font-weight:600;
+  font-size:clamp(30px,6.4vw,44px);
+  line-height:1.55;letter-spacing:.02em;
+  color:var(--navy-deep);
+}
+.hero h1 .u{
+  border-bottom:3px solid var(--vermilion);
+  padding-bottom:2px;
+}
+.hero .lead{
+  margin-top:36px;font-size:16px;color:var(--ink);
+}
+.hero .lead p+p{margin-top:1.2em}
+
+/* ---------- セクション共通 ---------- */
+section{padding:64px 0;border-bottom:1px solid var(--rule)}
+.sec-label{
+  display:flex;align-items:center;gap:10px;
+  font-size:13px;letter-spacing:.18em;color:var(--navy);
+  font-weight:700;margin-bottom:20px;
+}
+.sec-label::before{
+  content:"";width:14px;height:14px;background:var(--navy);
+  clip-path:polygon(0 0,100% 0,100% 100%);
+  transform:translateY(-1px);
+}
+h2{
+  font-family:var(--serif);font-weight:600;
+  font-size:clamp(22px,4.6vw,28px);line-height:1.6;
+  color:var(--navy-deep);margin-bottom:28px;letter-spacing:.02em;
+}
+p+p{margin-top:1.2em}
+strong{font-weight:700;color:var(--navy-deep)}
+.note{font-size:12.5px;color:var(--ink-soft);margin-top:20px;line-height:1.8}
+
+/* ---------- 会社概要 ---------- */
+.facts{
+  margin-top:32px;border-top:1px solid var(--ink);
+}
+.facts dl{
+  display:grid;grid-template-columns:9em 1fr;
+  border-bottom:1px solid var(--rule);
+  padding:14px 4px;gap:8px;
+}
+.facts dt{font-size:13.5px;color:var(--ink-soft);font-weight:500;padding-top:2px}
+.facts dd{font-size:15px}
+
+/* ---------- 安定の三分解 ---------- */
+.axis{background:var(--paper-alt)}
+.axis-item{
+  background:var(--paper);border:1px solid var(--rule);
+  padding:32px 28px;margin-top:24px;
+}
+.axis-item .q{
+  font-family:var(--serif);font-weight:600;font-size:19px;
+  color:var(--navy-deep);display:flex;gap:14px;align-items:baseline;
+  line-height:1.6;
+}
+.axis-item .q .n{
+  font-family:var(--serif);font-size:15px;color:var(--vermilion);
+  white-space:nowrap;font-weight:700;letter-spacing:.06em;
+}
+.axis-item .a{margin-top:16px;font-size:15px}
+.bignum{
+  margin-top:20px;padding:18px 20px;background:var(--paper-alt);
+  display:flex;flex-wrap:wrap;gap:8px 28px;align-items:baseline;
+}
+.bignum .num{
+  font-family:var(--serif);font-weight:700;font-size:30px;
+  color:var(--navy);letter-spacing:.02em;font-feature-settings:"tnum";
+}
+.bignum .cap{font-size:12.5px;color:var(--ink-soft)}
+
+/* ---------- 経緯（年表） ---------- */
+.timeline{margin-top:32px;border-left:2px solid var(--navy);padding-left:28px}
+.tl-item{position:relative;padding-bottom:34px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{
+  content:"";position:absolute;left:-34.5px;top:9px;
+  width:11px;height:11px;background:var(--paper);
+  border:2.5px solid var(--navy);border-radius:50%;
+}
+.tl-item .year{
+  font-family:var(--serif);font-weight:700;font-size:17px;color:var(--navy);
+}
+.tl-item .body{font-size:15px;margin-top:4px}
+
+/* ---------- 引用 ---------- */
+.quote{
+  margin-top:28px;padding:26px 28px;background:var(--paper-alt);
+  border-left:3px solid var(--navy);
+}
+.quote .q-body{
+  font-family:var(--serif);font-size:16.5px;line-height:2;color:var(--navy-deep);
+}
+.quote .q-src{font-size:12.5px;color:var(--ink-soft);margin-top:12px}
+
+/* ---------- Q&A ---------- */
+details{
+  border:1px solid var(--rule);margin-top:16px;background:var(--paper);
+}
+summary{
+  cursor:pointer;list-style:none;padding:20px 24px;
+  font-weight:700;font-size:15.5px;color:var(--navy-deep);
+  display:flex;gap:14px;align-items:baseline;
+  transition:background .2s;
+}
+summary::-webkit-details-marker{display:none}
+summary:hover{background:var(--paper-alt)}
+summary .qm{
+  font-family:var(--serif);color:var(--vermilion);font-weight:700;
+  white-space:nowrap;
+}
+summary::after{
+  content:"＋";margin-left:auto;color:var(--ink-soft);
+  font-weight:400;flex-shrink:0;
+}
+details[open] summary::after{content:"－"}
+details .ans{
+  padding:4px 24px 24px;font-size:15px;color:var(--ink);
+  border-top:1px dashed var(--rule);padding-top:18px;margin:0 24px 24px;
+  padding-left:0;padding-right:0;
+}
+
+/* ---------- 面接で確認 ---------- */
+.check{margin-top:28px;border-top:1px solid var(--ink)}
+.check li{
+  list-style:none;display:flex;gap:16px;
+  padding:18px 4px;border-bottom:1px solid var(--rule);
+  font-size:15px;align-items:baseline;
+}
+.check li::before{
+  content:"確";font-family:var(--serif);font-size:13px;
+  color:var(--paper);background:var(--navy);
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+  border-radius:2px;flex-shrink:0;transform:translateY(3px);
+}
+
+/* ---------- 結び ---------- */
+.closing{border-bottom:none;padding-bottom:48px}
+.closing .msg{
+  font-family:var(--serif);font-size:17.5px;line-height:2.1;
+  color:var(--navy-deep);
+}
+.sign{
+  margin-top:40px;padding-top:24px;border-top:1px solid var(--rule);
+  font-size:13px;color:var(--ink-soft);line-height:1.9;
+}
+.sign .nm{font-size:15px;color:var(--ink);font-weight:700}
+
+/* ---------- 出現アニメーション ---------- */
+body.js .rv{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+body.js .rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+@media (max-width:520px){
+  .facts dl{grid-template-columns:7.5em 1fr}
+  .axis-item{padding:26px 20px}
+  .bignum .num{font-size:25px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="to">会社の規模と、安定性を重視されるあなたへ</p>
+    <h1 class="rv">社員数は、21名です。<br>それでも、<span class="u">あえて</span>ご提案します。</h1>
+    <div class="lead rv">
+      <p>今回ご紹介する株式会社ケーナインは、決して大きな会社ではありません。「規模や安定を重視したい」というご意向を伺っているからこそ、その事実を最初にお伝えします。</p>
+      <p>そのうえで、この会社が<strong>「社員数と安定性が一致しない、珍しいケース」</strong>である理由を、公開情報の数字だけを使ってご説明させてください。読み終えたときに、安定の「測り方」がひとつ増えているはずです。</p>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap rv">
+    <p class="sec-label">ご紹介する会社</p>
+    <h2>株式会社ケーナイン</h2>
+    <p>東京都南西部から神奈川県北部（横浜・川崎）を地盤に、戸建・テラスハウスの分譲、建築工事、売買仲介、賃貸管理を手がける総合不動産会社です。</p>
+    <div class="facts">
+      <dl><dt>設立</dt><dd>2008年（18期目）</dd></dl>
+      <dl><dt>本社</dt><dd>東京都世田谷区三軒茶屋</dd></dl>
+      <dl><dt>従業員数</dt><dd>21名</dd></dl>
+      <dl><dt>売上高</dt><dd>32億2,000万円（グループ入り時点の実績）</dd></dl>
+      <dl><dt>資本関係</dt><dd>株式会社アーバネットコーポレーション（東証スタンダード上場・証券コード3242）の100％子会社</dd></dl>
+    </div>
+    <p class="note">※ 本資料の数値は、親会社の適時開示資料・決算短信など公開情報に基づいています。</p>
+  </div>
+</section>
+
+<section class="axis">
+  <div class="wrap">
+    <div class="rv">
+      <p class="sec-label">安定を、三つに分解する</p>
+      <h2>「安定した会社」とは、<br>何が安定している会社でしょうか。</h2>
+      <p>社員数は、安定を測る物差しのひとつにすぎません。突き詰めると、安定とは次の三つに分解できます。ケーナインを、この三つで検証します。</p>
+    </div>
+
+    <div class="axis-item rv">
+      <p class="q"><span class="n">検証一</span>会社が、潰れないか。──財務基盤</p>
+      <p class="a">ケーナインは、東証スタンダード上場・アーバネットコーポレーションの100％子会社です。親会社は直近決算で売上高339億円・営業利益34.8億円を計上し、<strong>3期連続で過去最高益を更新中</strong>。財務基盤・会計監査・ガバナンスは、実質的に上場企業と同じ土台の上にあります。</p>
+      <div class="bignum">
+        <span><span class="num">339億円</span> <span class="cap">親会社グループ売上高</span></span>
+        <span><span class="num">3期連続</span> <span class="cap">過去最高益を更新</span></span>
+      </div>
+    </div>
+
+    <div class="axis-item rv">
+      <p class="q"><span class="n">検証二</span>仕事が、途切れないか。──事業の勢い</p>
+      <p class="a">ケーナイン単体で、21名で売上32億円。1人あたりに換算すると<strong>約1.5億円</strong>です。これは「仕事が足りない会社」の数字ではなく、むしろ<strong>人が足りていない会社</strong>の数字です。今回の採用も、その事業拡大が背景にあります。</p>
+      <div class="bignum">
+        <span><span class="num">約1.5億円</span> <span class="cap">社員1人あたり売上高</span></span>
+        <span><span class="num">21名</span> <span class="cap">で売上32億円</span></span>
+      </div>
+    </div>
+
+    <div class="axis-item rv">
+      <p class="q"><span class="n">検証三</span>この先も、続くのか。──グループ内での立ち位置</p>
+      <p class="a">ここが最もお伝えしたい点です。ケーナインは経営難で買収された会社ではありません。親会社が<strong>横浜・川崎エリアへ事業を広げるための「中核」として迎え入れた会社</strong>です。実際、親会社の決算短信には、グループ全体の好業績の要因として「ケーナインの業績が好調だったこと」が社名入りで記載されています。上場企業の公式なIR資料に名前が載る子会社は、切られる側ではなく、グループを牽引する側です。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap rv">
+    <p class="sec-label">グループ入りの経緯</p>
+    <h2>「買収された」のではなく、<br>「成長戦略のために選ばれた」会社</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <p class="year">2008年</p>
+        <p class="body">世田谷で創業。東京都南西部・神奈川県北部で戸建分譲と建築工事の実績を積み上げる。</p>
+      </div>
+      <div class="tl-item">
+        <p class="year">2024年2月</p>
+        <p class="body">アーバネットコーポレーションが全株式を取得し、100％子会社に。目的は、グループの開発エリアを横浜・川崎へ拡大すること。ケーナインの建築工事部門と用地仕入れの人材は「今後のグループの成長に大きな強み」と公式に位置づけられました。</p>
+      </div>
+      <div class="tl-item">
+        <p class="year">2025年8月</p>
+        <p class="body">グループ入りからわずか1年余りで、親会社の決算短信に業績好調の要因として社名入りで記載。期待に、数字で応えています。</p>
+      </div>
+    </div>
+    <div class="quote">
+      <p class="q-body">「建築工事部門や多くの用地仕入れ要員を確保できることは、今後のグループの成長に大きな強みとなります」</p>
+      <p class="q-src">── アーバネットコーポレーション 適時開示資料（ケーナイン子会社化の発表）より</p>
+    </div>
+  </div>
+</section>
+
+<section class="axis">
+  <div class="wrap rv">
+    <p class="sec-label">規模を、選ぶ意味</p>
+    <h2>21名という規模は、<br>あなたにとって不利でしょうか。</h2>
+    <p>大手企業の安定には、代わりに「自分の仕事が業績に与える影響が見えにくい」という側面があります。ケーナインは逆です。上場グループの基盤の上で、経営陣との距離が近く、<strong>ご自身の成果がグループの決算に直結する</strong>環境です。</p>
+    <p>「上場企業の安定」と「中小企業の裁量」。この二つを同時に取れる求人は、正直なところ多くありません。安定を重視する方にこそ、規模の小ささが利点に変わる構造です。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap rv">
+    <p class="sec-label">よくあるご質問</p>
+    <h2>それでも残る疑問に、先にお答えします。</h2>
+    <details>
+      <summary><span class="qm">問</span>子会社は結局、親会社の都合で切られるのでは？</summary>
+      <p class="ans">そのご懸念は正しいです。ただし整理されるのは「買った目的を果たせない子会社」です。ケーナインは横浜・川崎進出という親会社の成長戦略そのもののために迎えられ、1年で決算資料に好調と明記されるほど期待に応えています。手放す理由がない側の子会社です。</p>
+    </details>
+    <details>
+      <summary><span class="qm">問</span>それなら、親会社に直接入るほうが良いのでは？</summary>
+      <p class="ans">建築・戸建分譲の実務を担っているのはケーナイン側です。親会社の本業は都市型マンションの開発・一棟販売のため、あなたの経験が活きるポジションはケーナインにあります。「所属はケーナイン、基盤はグループ」という形が、最も良いとこ取りです。</p>
+    </details>
+    <details>
+      <summary><span class="qm">問</span>グループといっても、待遇は別なのでは？</summary>
+      <p class="ans">待遇・評価制度は会社ごとに異なるため、ここは書面ではなく面接でご確認いただくべき点です。逆に言えば、面接に行かないと分からない情報です。確かめてから判断する、で遅くありません。</p>
+    </details>
+  </div>
+</section>
+
+<section class="axis">
+  <div class="wrap rv">
+    <p class="sec-label">面接という場の使い方</p>
+    <h2>面接は「決める場」ではなく、<br>「確かめる場」です。</h2>
+    <p>ここまでの内容は、すべて公開情報に基づく事実です。ただし、次の三点だけは面接でしか確認できません。この確認のために、面接という機会を使ってください。</p>
+    <ul class="check">
+      <li>グループ内でのケーナインの位置づけを、経営陣自身の言葉でどう語るか</li>
+      <li>待遇・評価制度と、グループ連携の具体的な実例</li>
+      <li>入社後に任される役割と、事業拡大のなかでの期待値</li>
+    </ul>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap rv">
+    <p class="sec-label">結びに</p>
+    <p class="msg">「安定を重視する」というあなたの軸を、変える必要はまったくありません。変わるのは、安定を「社員数」で測るか、「財務基盤と事業の立ち位置」で測るか──その物差しだけです。</p>
+    
+    <div class="sign">
+      <p class="nm">ジョブリー建設　キャリアアドバイザー　髙橋 承輝</p>
+      <p>株式会社レクリー<br>東京都豊島区高田3-5-14 サイテックビル4階<br>Mobile: 050-5783-6146　Mail: y.takahashi@recree.page<br>職業紹介事業者番号 13-ユ-312147</p>
+    </div>
+  </div>
+</section>
+
+<script>
+// JSが有効な場合のみアニメーション用の初期非表示を適用（無効ならそのまま全文表示）
+document.body.classList.add('js');
+(function(){
+  var targets = document.querySelectorAll('.rv');
+  if (!('IntersectionObserver' in window)) {
+    targets.forEach(function(el){ el.classList.add('on'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting) { entry.target.classList.add('on'); io.unobserve(entry.target); }
+    });
+  }, { threshold: 0.12 });
+  targets.forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>
